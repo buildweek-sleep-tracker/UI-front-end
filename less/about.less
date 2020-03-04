@@ -1,5 +1,5 @@
 .container {
-    background-image: linear-gradient(to top right, @nav-bg, @button-bg);
+    // background-image: linear-gradient(to top right, @nav-bg, @button-bg);
     .about {
       display: flex;
       flex-wrap: wrap;
@@ -7,12 +7,12 @@
       @media @phone {
         flex-direction: column;
       }
-      
+
       div {
         width: 30%;
         margin: 3% 0;
         margin-bottom: 0;
-        border: 2px @gray;
+        border: 2px (@gray, 50%);
         padding: 2%;
         transition-duration: 300ms;
         &:hover {
